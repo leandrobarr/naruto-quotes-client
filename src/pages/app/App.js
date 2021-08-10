@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import narutoImg from '../../images/naruto.png';
+import narutoImg from '../../images/ikki.png';
 import jutsoSound from '../../sounds/jutso.mp3';
 import { Quotes } from '../../components';
 import { getQuote } from '../../services';
@@ -8,6 +8,7 @@ import { getQuote } from '../../services';
 const audio = new Audio(jutsoSound);
 
 export function App() {
+ 
   const isMounted = useRef(true);
   const [quote, setQuote] = useState({
     speaker: 'Loading speaker...',
@@ -52,4 +53,5 @@ const Content = styled.div`
 const NarutoImg = styled.img`
   max-width: 50vw;
   align-self: flex-end;
-`;
+`; 
+
