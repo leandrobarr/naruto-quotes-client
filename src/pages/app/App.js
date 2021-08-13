@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import narutoImg from '../../images/ikki.png';
-import jutsoSound from '../../sounds/jutso.mp3';
 import { Quotes } from '../../components';
 import { getQuote } from '../../services';
+import jutsoSound from '../../sounds/jutso.mp3';
 
 const audio = new Audio(jutsoSound);
 

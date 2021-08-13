@@ -20,9 +20,11 @@ test('renders a button and naruto image', () => {
 
   const buttonEl = screen.getByRole('button');
   const imageEl = screen.getByRole('img');
+  //const textE1 = screen.getByText(/Speaker/);
 
   expect(buttonEl).toBeInTheDocument();
   expect(imageEl).toBeInTheDocument();
+  //expect(textE1).toBeInTheDocument();
 });
 
 test('calls api on startup and renders it response', async () => {
